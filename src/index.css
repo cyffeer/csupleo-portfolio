@@ -1,11 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   height: 100vh;
-  background: rgb(25, 25, 24);
-  color: white;
-  font-family: "outfit";
-}
+  background: rgb(25, 25, 24); /* Dark background color */
+  color: white; /* White text color for contrast */
+  font-family: "Outfit"; /* Ensure you have this font available */
+} 

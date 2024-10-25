@@ -26,8 +26,10 @@ const MyCertification = () => {
                 })}
             </div>
             <div className="mycertification-showmore">
-                <p>View More Certifications</p>
-                <img src={arrow_icon} alt="" />
+                <a href="https://www.credly.com/users/cyfersupleo" className="mycertification-showmore-link"> {/* Add your link here */}
+                    <p>View More Certifications</p>
+                    <img src={arrow_icon} alt="Arrow icon" />
+                </a>
             </div>
         </div>
     );

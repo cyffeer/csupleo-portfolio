@@ -25,9 +25,11 @@ const MyProject = () => {
                 })}
             </div>
             <div className="myproject-showmore">
-                <p>View More Project</p>
-                <img src={arrow_icon} alt="" />
-            </div>
+    <a href="https://github.com/cyffeer" className="myproject-showmore-link">
+        <p>View More Projects</p>
+        <img src={arrow_icon} alt="Arrow icon" />
+    </a>
+</div>
         </div>
     );
 };

@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   const closeMenu = () => {
-    menuRef.current.style.right = "-350px";
+    menuRef.current.style.right = "-100%"; // Hide menu
     setIsMenuOpen(false); // Set menu open state to false
   };
 
@@ -32,7 +32,7 @@ const Navbar = () => {
         <img src={menu_open} onClick={openMenu} alt="Open Menu" className="nav-mob-open" />
       )}
       
-      <ul ref={menuRef} className="nav-menu">
+      <ul ref={menuRef} className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
         <li>
           <AnchorLink className="anchor-link" href="#home">
             <p onClick={() => setMenu("home")}>Home</p>
@@ -74,12 +74,6 @@ const Navbar = () => {
             <p onClick={() => setMenu("awards")}>Awards</p>
           </AnchorLink>
           {menu === "awards" ? <img src={underline} alt="underline" /> : null}
-        </li>
-        <li>
-          <AnchorLink className="anchor-link" offset={50} href="#contact">
-            <p onClick={() => setMenu("contact")}>Contact</p>
-          </AnchorLink>
-          {menu === "contact" ? <img src={underline} alt="underline" /> : null}
         </li>
       </ul>
 

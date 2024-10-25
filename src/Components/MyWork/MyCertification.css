@@ -90,6 +90,14 @@
     margin-bottom: 80px;
     transition: 0.6s;
     cursor: pointer;
+    justify-content: center; /* Center align items */
+}
+
+.mycertification-showmore-link {
+    color: white; /* Ensures link text is white */
+    text-decoration: none; /* Remove underline from link */
+    display: flex; /* Ensures flex layout */
+    align-items: center; /* Center align items vertically */
 }
 
 .mycertification-showmore img {

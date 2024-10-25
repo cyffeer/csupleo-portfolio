@@ -16,9 +16,9 @@ const MyAward = () => {
                             <div className="myaward-image-wrapper">
                                 <img src={award.image} alt={award.title} className="myaward-image" />
                                 <div className="myaward-details">
-                                    <h2>{award.title} </h2>
-                                    <p>{award.date} </p>
-                                    <p>{award.description} </p>
+                                    <h2>{award.title}</h2>
+                                    <p>{award.date}</p>
+                                    <p>{award.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -26,8 +26,10 @@ const MyAward = () => {
                 })}
             </div>
             <div className="myaward-showmore">
-                <p>View More Awards</p>
-                <img src={trophy_icon} alt="" />
+                <a href="https://edith.feutech.edu.ph/briefcase/profile/csupleo" className="myaward-showmore-link"> {/* Add your link here */}
+                    <p>View More Awards</p>
+                    <img src={trophy_icon} alt="Trophy icon" />
+                </a>
             </div>
         </div>
     );

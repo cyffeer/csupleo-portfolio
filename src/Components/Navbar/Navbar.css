@@ -1,140 +1,110 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 20px 170px;
+    justify-content: space-between; /* Space between logo and menu */
+    padding: 20px 30px; /* Adjusts padding around the navbar */
+    position: relative; /* Add relative positioning */
 }
 
 .nav-menu {
     display: flex;
     align-items: center;
-    list-style: none;
-    gap: 70px;
-    font-size: 20px;
+    list-style: none; /* Remove default list styling */
+    gap: 30px; /* Space between menu items */
+    font-size: 18px; /* Adjust font size to fit better */
 }
 
 .nav-menu a:link {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-connect a:link {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Smooth color transition */
 }
 
 .nav-connect {
-    padding: 15px 30px; /* Adjusted padding */
-    border-radius: 50px;
-    background: linear-gradient(90deg, #FFC107, #FF9800);
-    font-size: 20px; /* Reduced font size for better proportion */
-    cursor: pointer;
-    transition: transform 0.5s, box-shadow 0.3s; /* Added box-shadow transition */
-    margin-left: 20px; /* Added space between connect button and menu */
+    padding: 12px 25px; /* Adjust button padding */
+    border-radius: 50px; /* Rounded corners */
+    background: linear-gradient(90deg, #FFC107, #FF9800); /* Gradient background */
+    font-size: 18px; /* Adjust font size for button */
+    cursor: pointer; /* Pointer cursor for button */
+    transition: transform 0.5s, box-shadow 0.3s; /* Effects on hover */
 }
 
 .nav-connect:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Added shadow on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
 }
 
 .navbar img {
-    width: 100px;
-    height: 100px;
-    margin-right: 20px; /* Added space between logo and menu */
+    width: 100px; /* Logo size */
+    height: 100px; /* Logo size */
+    margin-right: 20px; /* Space between logo and menu */
 }
 
 .nav-menu li {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Centered items for better alignment */
-    gap: 0; /* Reduced gap to bring the underline closer */
-    cursor: pointer;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
 }
 
-.nav-menu li img {
-    display: flex;
-    margin: auto;
-}
-
-.nav-connect a:link {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.nav-mob-close {
-    display: none;
-}
-
+/* Mobile Menu Styles */
+.nav-mob-close,
 .nav-mob-open {
-    display: none;
+    display: none; /* Default hidden, shown in media query */
 }
 
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .navbar {
-        margin: 20px 50px;
+        padding: 10px; /* Adjust padding for mobile */
     }
 
-    .navbar img {
-        width: 60px; /* Adjust to desired size */
-        height: 60px; /* Adjust to desired size */
-        margin-right: 10px; /* Adjusted for mobile view */
+    .nav-menu {
+        flex-direction: column; /* Stack menu items */
+        position: fixed;
+        top: 0;
+        right: 0; /* Align the menu to the right */
+        gap: 20px; /* Reduced space between items */
+        background-color: #FF9800; /* Background color */
+        width: 300px; /* Adjusted width for mobile menu */
+        height: 100%; /* Full height */
+        z-index: 2; /* Ensure it appears on top */
+        transition: right 0.5s ease; /* Smooth transition */
+        right: -100%; /* Start hidden off-screen */
+    }
+
+    .nav-mob-open {
+        display: block; /* Show mobile menu button */
+        z-index: 3; /* Ensure it appears above other elements */
+    }
+
+    .nav-mob-close {
+        display: block; /* Show close button in mobile menu */
+        z-index: 3; /* Ensure it appears above other elements */
+        position: fixed; /* Absolute positioning for better placement */
+        top: -20px; /* Adjust distance from the top */
+        right: -40px; /* Adjust distance from the right */
+        width: 30px; /* Set width for the close button */
+        height: 30px; /* Set height for the close button */
+        cursor: pointer; /* Change cursor to pointer */
+    }
+
+    .nav-mob-close img {
+        width: 15px; 
+        height: 15px; 
     }
 
     .nav-connect {
         display: none; /* Hide connect button on mobile */
     }
 
-    .nav-mob-open {
-        display: block;
-        position: fixed;
-        right: 30px;
-        top: 20px;
-        z-index: 3; /* Ensure the menu icon is on top */
-        width: 30px;
-    }
-
-    .nav-menu {
-        position: fixed;
-        flex-direction: column;
-        align-items: start;
-        top: 0;
-        right: -350px; /* Initial hidden position */
-        gap: 30px;
-        background-color: #FF9800;
-        width: 350px;
-        height: 100%;
-        z-index: 2;
-        transition: right 0.5s ease; /* Smooth transition */
-    }
-    
-    .nav-mob-close {
-        display: block;
-        position: fixed; /* Fixed position inside the menu */
-        top: 20px;
-        right: 30px; /* Aligned within the nav-menu */
-        width: 30px;
-        cursor: pointer;
-        z-index: 3; /* Keep on top of other elements */
-    }
-
-    .nav-menu li {
-        position: relative;
-        cursor: pointer;
-    }
-    
-    .nav-menu li::after {
-        content: "";
-        position: absolute;
-        bottom: -3px; /* Adjusts the distance between underline and text */
-        left: 0;
-        width: 100%;
-        height: 2px; /* Adjust thickness */
-        background-image: url("../../assets/nav_underline.png"); /* Your underline image */
-        background-size: cover;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-    
-    .nav-menu li.active::after,
-    .nav-menu li:hover::after {
-        opacity: 1;
+    /* Adjusting visibility of the menu */
+    .nav-menu.open {
+        right: 0; /* Bring the menu into view when open */
     }
 }
