@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Components/NavBar/NavBar";
+import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import About from "./Components/About/About";
 import Internship from "./Components/Services/Internship";
@@ -11,7 +11,7 @@ import Footer from "./Components/Footer/Footer";
 import MyAward from "./Components/MyWork/MyAward";
 import MyCertification from "./Components/MyWork/MyCertification";
 
-
+//hello
 const App = () => {
   return (
     <div>   
