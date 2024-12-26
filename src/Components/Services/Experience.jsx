@@ -6,7 +6,7 @@ const Experience = () => {
     return (
         <div id='services' className='experiences'>
             <div className="experiences-title">
-                <h1>My Leadership and Experiences</h1>
+                <h1>Leadership Experiences</h1>
             </div>
             <div className="experience-container">
                 {Services_Data.map((service,index) => {

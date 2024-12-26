@@ -7,7 +7,7 @@ const MyCertification = () => {
     return (
         <div id='certifications' className='mycertification'>
             <div className="mycertification-title">
-                <h1>My Certifications</h1>
+                <h1>Certifications</h1>
             </div>
             <div className="mycertification-container">
                 {Certification_data.map((certification, index) => {

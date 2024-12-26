@@ -17,9 +17,9 @@ const Award_data = [
         image: award2_img 
     },
     {
-        title: 'Battle of the Champions (Men\'s Basketball)',
+        title: '3rd Place - Innovative and Best Thesis Overall',
         date: '2024',
-        description: '2nd Runner-up in the Men\'s Basketball Division.',
+        description: '3rd place - Best Poster, 3rd place - Best AVP',
         image: award3_img
     },
     {

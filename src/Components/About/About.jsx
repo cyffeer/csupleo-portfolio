@@ -20,17 +20,17 @@ const About = () => {
                         <p>In addition to coding, I embrace my role as a student-athlete, balancing rigorous academic pursuits with competitive sports. This blend of disciplines fuels my drive and teaches me the value of teamwork and perseverance. Let's collaborate to turn ideas into reality!</p>
                     </div>
                     <div className="about-skills">
-                        <div className='skill'><div className="about-skill"><p>Front-End: HTML, CSS, JavaScript, React</p></div>
+                        <div className='skill'><div className="about-skill"><p>Front-End: HTML, CSS, JavaScript, React, Vue.js</p></div>
                         <hr style={{width:"70%"}}/>
                         </div>
-                        <div className='skill'><div className="about-skill"><p>Back-End: PHP, Python, Java</p></div>
-                        <hr style={{width:"60%"}}/>
+                        <div className='skill'><div className="about-skill"><p>Back-End: PHP, Python, Java, Laravel, </p></div>
+                        <hr style={{width:"70%"}}/>
                         </div>
                         <div className='skill'><div className="about-skill"><p>Database: MySQL</p></div>
                         <hr style={{width:"80%"}}/>
                         </div>
-                        <div className='skill'><div className="about-skill"><p>Web Development</p></div>
-                        <hr style={{width:"60%"}}/>
+                        <div className='skill'><div className="about-skill"><p>Web Development: Node.js, Inertia</p></div>
+                        <hr style={{width:"70%"}}/>
                         </div>
                     </div>
                 </div>
@@ -42,12 +42,12 @@ const About = () => {
                 </div>
                 <hr />
                 <div className="about-achievement">
-                    <h1>5</h1>
+                    <h1>6</h1>
                     <p>PROJECTS COMPLETED</p>
                 </div>
                 <hr />
                 <div className="about-achievement">
-                    <h1>4</h1>
+                    <h1>5</h1>
                     <p>AWARDS & HONORS</p>
                 </div>
             </div>

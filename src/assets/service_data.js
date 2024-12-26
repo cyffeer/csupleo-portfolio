@@ -4,7 +4,7 @@ const Services_Data = [
         title: "Documentation / Secretariat Committee",
         company: "FEU TECH Computer Science Expositions & Conferences",
         startDate: "September 2024",
-        endDate: "Present",
+        endDate: "December 2024",
     },
     {
         id: 2,

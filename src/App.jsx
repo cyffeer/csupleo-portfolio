@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Components/NavBar/NavBar";
 import Hero from "./Components/Hero/Hero";
 import About from "./Components/About/About";
+import Internship from "./Components/Services/Internship";
 import Education from "./Components/Services/Education";
 import Experience from "./Components/Services/Experience";
 import MyProject from "./Components/MyWork/MyProject";
@@ -17,6 +18,7 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <About/>
+      <Internship/>
       <Education/>
       <Experience/>
       <MyProject/>

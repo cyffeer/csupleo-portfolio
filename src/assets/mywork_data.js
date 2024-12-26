@@ -3,6 +3,7 @@ import project2_img from '../assets/project2.png'
 import project3_img from '../assets/project3.png'
 import project4_img from '../assets/project4.png'
 import project5_img from '../assets/project5.png'
+import project6_img from '../assets/project6.png'
 
 const MyWork_data = [
     {
@@ -39,6 +40,13 @@ const MyWork_data = [
         technologies: ["HTML & CSS ", "JavaScript"],
         link: "https://github.com/cyffeer/Cyfer-Portfolio",
         image: project5_img
+    },
+    {
+        id: 6,
+        title: "Inertia-CRUD",
+        technologies: ["PHP ", "Laravel ", "Vue.js ", "Node.js ", "Tailwind ","Inertia ", "JavaScript"],
+        link: "https://github.com/cyffeer/Inertia-CRUD",
+        image: project6_img
     }
 ];
 
