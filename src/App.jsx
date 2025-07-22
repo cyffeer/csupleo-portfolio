@@ -11,7 +11,7 @@ import Footer from "./Components/Footer/Footer.jsx";
 import MyAward from "./Components/MyWork/MyAward.jsx";
 import MyCertification from "./Components/MyWork/MyCertification.jsx";
 
-//hello
+
 const App = () => {
   return (
     <div>   
