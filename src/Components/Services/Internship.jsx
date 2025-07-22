@@ -11,12 +11,16 @@ const Internship = () => {
             <div className="internship-container">
                 {Internship_Data.map((internship, index) => {
                     return <div key={index} className='internship-format'>
-                            {internship.title && <h3>{internship.title}</h3>}
-                            {internship.company && <h4>{internship.company}</h4>}
-                            {internship.startDate && <p>{internship.startDate}</p>}
-                            {internship.endDate && <p>{internship.endDate}</p>}
-                            {internship.image && <img className='internship-image' src={internship.image} alt={internship.title} />}
-                            {internship.link && <button onClick={() => window.open(internship.link, "https://flowerstore.ph/")}>Visit Company</button>}
+                            <div className="internship-content">
+                                {internship.title && <h3>{internship.title}</h3>}
+                                {internship.company && <h4>{internship.company}</h4>}
+                                <div className="internship-dates">
+                                    {internship.startDate && <p>{internship.startDate}</p>}
+                                    {internship.endDate && <p> - {internship.endDate}</p>}
+                                </div>
+                                {internship.image && <img className='internship-image' src={internship.image} alt={internship.title} />}
+                                {internship.link && <button onClick={() => window.open(internship.link, "https://flowerstore.ph/")}>Visit Company</button>}
+                            </div>
                     </div>
                 })}
             </div>
