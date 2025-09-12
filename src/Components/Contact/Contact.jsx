@@ -10,7 +10,8 @@ const Contact = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "03b3a167-1e88-4d0f-88f6-fa8281e41b58");
+    // Use environment variable
+    formData.append("access_key", process.env.REACT_APP_WEB3FORMS_ACCESS_KEY);
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -25,7 +26,7 @@ const Contact = () => {
     }).then((res) => res.json());
 
     if (res.success) {
-      alert(res.message);
+      alert("Message sent successfully!");
     }
   };
 
@@ -33,6 +34,7 @@ const Contact = () => {
         <div id='contact' className="contact">
           <div className="contact-title">
             <h1>Get in touch with me</h1>
+            <div className="contact-title-underline"></div>
           </div>  
           <div className="contact-section">
             <div className="contact-left">
