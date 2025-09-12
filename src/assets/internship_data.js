@@ -16,7 +16,7 @@ const Internship_Data = [
         title: "QA Automation Engineer Intern",
         company: "GCash",
         startDate: "June 2025",
-        endDate: "Present",
+        endDate: "September 2025",
         image: intern2_img
     },
     {
@@ -24,7 +24,7 @@ const Internship_Data = [
         title: "Intern",
         company: "Ayala Group Summer Internship Program",
         startDate: "June 2025",
-        endDate: "Present",
+        endDate: "July 2025",
         image: intern3_img
     },
 

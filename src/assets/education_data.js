@@ -3,7 +3,7 @@ const Education_Data = [
         degree: "B.S. in Computer Science with Specialization in Software Engineering",
         institution: "FEU Institute of Technology",
         startDate: "August 2021",
-        endDate: "Present"
+        endDate: "Expected November 2025"
     },
     {
         degree: "General Academic Strand",
