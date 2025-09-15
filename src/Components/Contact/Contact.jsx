@@ -7,28 +7,32 @@ import call_icon from '../../assets/call_icon.png'
 const Contact = () => {
 
   const onSubmit = async (event) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
+  event.preventDefault();
+  const formData = new FormData(event.target);
 
-    // Use environment variable
-    formData.append("access_key", process.env.REACT_APP_WEB3FORMS_ACCESS_KEY);
+  // Hardcoded key - works in all environments
+  formData.append("access_key", "03b3a167-1e88-4d0f-88f6-fa8281e41b58");
 
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
-
-    const res = await fetch("https://api.web3forms.com/submit", {
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: json
-    }).then((res) => res.json());
+      body: formData
+    });
 
-    if (res.success) {
+    const result = await response.json();
+
+    if (result.success) {
       alert("Message sent successfully!");
+      event.target.reset();
+    } else {
+      console.error("Error:", result);
+      alert("Failed to send message. Please try again.");
     }
-  };
+  } catch (error) {
+    console.error("Error:", error);
+    alert("Network error. Please try again later.");
+  }
+};
 
     return (
         <div id='contact' className="contact">
@@ -54,11 +58,11 @@ const Contact = () => {
             </div>
             <form onSubmit={onSubmit} className="contact-right">
             <label htmlFor="">Your Name</label>
-            <input type="text" placeholder='Enter your name' name='name'/>
+            <input type="text" placeholder='Enter your name' name='name' required/>
             <label htmlFor="">Your Email</label>
-            <input type="email" placeholder='Enter your email' name='email'/>
+            <input type="email" placeholder='Enter your email' name='email' required/>
             <label htmlFor="">Write your message</label>
-            <textarea name="message" rows="8" placeholder='Enter your message'></textarea>
+            <textarea name="message" rows="8" placeholder='Enter your message' required></textarea>
             <button type='submit' className="contact-submit">Submit</button>
             </form>
           </div>
