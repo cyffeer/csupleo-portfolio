@@ -4,7 +4,8 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/csupleo-portfolio/',
+  // GitHub Pages serves this project from a repository subpath; Vercel serves it from the domain root.
+  base: process.env.VERCEL ? '/' : '/csupleo-portfolio/',
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
