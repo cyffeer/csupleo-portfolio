@@ -1,6 +1,7 @@
 import intern_img from '../assets/intern.png'
 import intern2_img from '../assets/intern2.png'
 import intern3_img from '../assets/intern3.png'
+import intern4_img from '../assets/intern4.png'
 
 const Internship_Data = [
     {
@@ -26,6 +27,14 @@ const Internship_Data = [
         startDate: "June 2025",
         endDate: "July 2025",
         image: intern3_img
+    },
+    {
+        id: 4,
+        title: "Software Programmer",
+        company: "Fujitsu Engineering Technologies Philippines, Inc.",
+        startDate: "January 2026",
+        endDate: "Present",
+        image: intern4_img
     },
 
 ]

@@ -49,9 +49,6 @@ const Contact = () => {
                 <img src={mail_icon} alt="" /><p>cyfernikolaisupleo@gmail.com</p>
                 </div>
                 <div className="contact-detail">
-                <img src={call_icon} alt="" /><p>+639086950606</p>  
-                </div>
-                <div className="contact-detail">
                 <img src={location_icon} alt="" /><p>Quezon City Philippines</p> 
                 </div>
                 </div>

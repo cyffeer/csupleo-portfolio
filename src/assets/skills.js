@@ -7,13 +7,13 @@ const skills = [
     },
     {
         title: "Web & Frameworks",
-        skills: ["React.js", "Node.js", "Vue.js", "Laravel", "Django", "HTMX", "Tailwind CSS"],
+        skills: ["Spring Boot", ".NET", "Angular.js", "React.js", "Node.js", "Vue.js", "Laravel", "Django", "HTMX", "Tailwind CSS"],
         icon: "🌐",
         level: 85
     },
     {
         title: "Databases",
-        skills: ["SQL", "MySQL"],
+        skills: ["SQL", "MySQL", "PostgreSQL", "MongoDB", "Firebase"],
         icon: "🗄️",
         level: 80
     },

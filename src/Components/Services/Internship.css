@@ -36,10 +36,10 @@
 
 .internship-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1100px;
     margin-bottom: 80px;
 }
 
@@ -57,7 +57,7 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
-    min-height: 400px;
+    min-height: 280px;
 }
 
 .internship-format::before {
@@ -106,8 +106,13 @@
 
 .internship-dates {
     display: flex;
-    gap: 10px;
+    flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+    width: max-content;
+    max-width: 100%;
+    white-space: nowrap;
 }
 
 .internship-format p {
@@ -116,6 +121,7 @@
     line-height: 1.4;
     margin: 0;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .start-date::after {
@@ -293,9 +299,9 @@
     }
 
     .internship-dates {
-        flex-direction: column;
-        gap: 5px;
-        align-items: flex-start;
+        flex-direction: row;
+        gap: 0;
+        align-items: center;
     }
 
     .start-date::after {

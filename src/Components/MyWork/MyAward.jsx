@@ -30,7 +30,7 @@ const MyAward = () => {
                 })}
             </div>
             <div className="myaward-showmore">
-                <a href="https://edith.feutech.edu.ph/briefcase/profile/csupleo" className="myaward-showmore-link">
+                <a href="https://www.linkedin.com/in/csupleo/details/honors/" className="myaward-showmore-link">
                     <span>View More Awards</span>
                     <img src={trophy_icon} alt="Trophy icon" />
                 </a>
